@@ -20,6 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 //@Hidden
+@PreAuthorize("hasRole('PROJECT_ADMIN')")
 @RequestMapping("/api/roles")
 @RestController
 public class RoleController {
